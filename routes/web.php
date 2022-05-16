@@ -45,8 +45,9 @@ Route::middleware('autenticacao')
     Route::get('/fornecedor/excluir/{id}','FornecedorController@excluir')->name('app.fornecedor.excluir');
 
 
+    //produtos
+    Route::resource('produto', 'ProdutoController');
 
-    Route::get('/produto','ProdutoController@index')->name('app.produto');
 });
 
 Route::fallback(function(){
