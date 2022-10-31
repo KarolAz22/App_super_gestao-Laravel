@@ -48,6 +48,9 @@ Route::middleware('autenticacao')
     //produtos
     Route::resource('produto', 'ProdutoController');
 
+        //produto detalhe
+        Route::resource('produto-detalhe', 'ProdutoDetalheController');
+
 });
 
 Route::fallback(function(){
